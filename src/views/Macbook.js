@@ -1,4 +1,8 @@
 import React from 'react';
+import Inch14Macbook from './Inch14Macbook';
+import Inch16Macbook from './Inch16Macbook';
+import WhatInTheBox from './WhatInTheBox';
+import Tnc from './Tnc';
 
 function Macbook() {
     return (
@@ -20,15 +24,41 @@ function Macbook() {
                 <a href='https://contactretail.apple.com/Help'>Chat with a Mac Specialist </a>
               </div>
 
-              <div>
-              <button className='p-5 border-solid border-black border rounded-bl-2xl rounded-tl-2xl focus:#0066CC focus:outline-none'>
-                14-inch
-              </button>
-              <button className='p-5 border-solid border-black border-b border-r border-t rounded-br-2xl rounded-tr-2xl '>
-                16-inch
-              </button>
-
+              <div className='itemPageContainer'>
+                <div className='screenSizeContiner'>
+                  <button className='p-5 border-solid border-black border-2 rounded-bl-2xl rounded-tl-2xl focus:border-border-color-0066CC focus:outline-none'>
+                    14-inch
+                  </button>
+                  <button className='p-5 border-solid border-black border-b-2 border-r-2 border-t-2 rounded-br-2xl rounded-tr-2xl focus:border-border-color-0066CC focus:outline-none'>
+                    16-inch
+                  </button>
+                  {/* <button className='p-5 border-solid border-black border-b-2 border-r-2 border-t-2 rounded-br-2xl rounded-tr-2xl focus:border-border-color-0066CC focus:outline-none'>
+                    16-inch
+                  </button> */}
+                </div>
+                <div className='chipFilter'>
+                    <p className='text-#686869'>Filter by chip:</p>
+                    {/* 14inch */}
+                    <div className='14-inch-chip'>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>All</button>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>M3</button>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>M3 Pro</button>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>M3 Max</button>
+                    </div>
+                    {/* 16inch */}
+                    <div className='16-inch-chip'>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>All</button>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>M3 Pro</button>
+                      <button className='px-5 py-2 m-5 border-solid border-black border-2 rounded-3xl focus:border-border-color-0066CC focus:outline-none focus:bg-black focus:text-white'>M3 Max</button>
+                    </div>
+                    
+                </div>
+                <Inch14Macbook/>
+                <Inch16Macbook/>
+                <WhatInTheBox/>
+                <Tnc/>
               </div>
+              
             </div>
         </div>
       );
