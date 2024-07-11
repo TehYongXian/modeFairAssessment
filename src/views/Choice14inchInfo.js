@@ -7,7 +7,7 @@ function Choice14inchInfo() {
                 <h1>What to consider when choosing your MacBook Pro.</h1>
                 <p>Configure your laptop on the next step.</p>
             </div>
-            <div>
+            <div className="flex flex-row m-5 p-5">
                 <div>
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-m3-icon-mac-202310?wid=72&amp;hei=72&amp;fmt=png-alpha&amp;.v=1697482680961" alt="" width="36" height="36" class="ir"/>
                     <h3>Apple M3 chip</h3>
