@@ -38,10 +38,10 @@ function NavBar() {
                     Macbook
                 </div>
                 <div className="rightInfo">
-                    <ul className="flex flex-row flex-1 p-2 m-2  w-auto">
-                        <li className="p-2 font-sans mx-auto place-content-center #686869">Overview</li>
-                        <li className="p-2 font-sans mx-auto place-content-center #686869">macOS</li>
-                        <li className="p-2 font-sans mx-auto place-content-center #686869">Compare</li>
+                    <ul className="flex flex-row flex-1 p-2 m-2 w-auto">
+                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">Overview</li>
+                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">macOS</li>
+                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">Compare</li>
                     </ul>
                 </div>
             </div>

@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         '#D3D3D5':'#D3D3D5',
         '#686869':'#686869',
-        '#0066CC' : '#0066CC',
+        'border-color-0066CC':'#0066CC',
+        'red':'#FF0000',
       }
     },
     
