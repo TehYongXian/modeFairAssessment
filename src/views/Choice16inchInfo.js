@@ -1,24 +1,15 @@
 import React from "react";
 
-function Choice14inchInfo() {
+
+function Inch16Macbook() {
     return (
-        <div className="m-5 p-5 t-100 bg-appleBackgroundGray rounded-2xl">
+        <div className="m-2 t-100 p-2 bg-appleBackgroundGray rounded-2xl">
             <div className="title">
                 <h1>What to consider when choosing your MacBook Pro.</h1>
                 <p>Configure your laptop on the next step.</p>
             </div>
             <div className="flex flex-row m-auto p-5">
-                <div className="p-2 m-5 text-left">
-                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-m3-icon-mac-202310?wid=72&amp;hei=72&amp;fmt=png-alpha&amp;.v=1697482680961" alt="" width="36" height="36" class="ir"/>
-                    <h3 className="pt-3">Apple M3 chip</h3>
-                    <p className="pt-3">M3 brings serious speed and capability to blaze through everyday activities, multitask across apps and video calls, and handle elaborate content in pro apps and games</p>
-                    <ul className="pt-3">
-                        <li>Run multiple apps, speed through thousands of photos</li>
-                        <li>Effortlessly edit 4K video</li>
-                        <li>Configure with up to 24GB unified memory</li>
-                        <li>Supports one external display</li>
-                    </ul>
-                </div>
+                
                 <div className="p-2 m-5 text-left">
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-m3-pro-icon-mac-202310?wid=72&amp;hei=72&amp;fmt=png-alpha&amp;.v=1696970981318" alt="" width="36" height="36" class="ir"></img>
                     <h3 className="pt-3">Apple M3 Pro chip</h3>
@@ -54,7 +45,8 @@ function Choice14inchInfo() {
 
             </div>
         </div>
+        
     )
 }
 
-export default Choice14inchInfo
+export default Inch16Macbook

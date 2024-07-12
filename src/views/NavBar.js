@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
     return (
-        <div className="navContainer  ">
+        <div className="navContainer  max-w-maxW mx-auto">
             <div className="globalnav-container px-22">
                 <ul className="globalnav-list flex flex-row flex-1  w-auto">
                     <li className="p-2 mx-auto place-content-center"><a>
@@ -34,14 +34,14 @@ function NavBar() {
             </div>
             
             <div className="localNav flex flex-row flex-1 px-22 w-auto place-content-center justify-between ">
-                <div className="itemTitle text-2xl font-bold place-content-center font-semibold text-xl ">
+                <div className="itemTitle text-2xl font-bold place-content-center font-semibold ">
                     Macbook
                 </div>
                 <div className="rightInfo">
-                    <ul className="flex flex-row flex-1 p-2 m-2 w-auto">
-                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">Overview</li>
-                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">macOS</li>
-                        <li className="p-2 font-sans mx-auto place-content-center text-#686869">Compare</li>
+                    <ul className="flex flex-row flex-1  w-auto">
+                        <li className="px-2 font-sans mx-auto place-content-center text-#686869">Overview</li>
+                        <li className="px-2 font-sans mx-auto place-content-center text-#686869">macOS</li>
+                        <li className="px-2 font-sans mx-auto place-content-center text-#686869">Compare</li>
                     </ul>
                 </div>
             </div>

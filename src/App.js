@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div className="app ">
-        <div className="app p-5 border-solid border-b #D3D3D5">
+        <div className="app border-solid border-b border-#D3D3D5">
           <NavBar/>
         </div>
           <Routes>
