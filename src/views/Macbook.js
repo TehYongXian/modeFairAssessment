@@ -6,14 +6,14 @@ import Tnc from './Tnc';
 
 function Macbook() {
     return (
-        <div className='itemPageContainer p-5'>
+        <div className='itemPageContainer p-5 m-10'>
           <div className="flex items-center justify-center">
               <p className='learnMore text-center'>
                   Buy MacBook Pro with education savings. Plus get AirPods. <a href="https://www.apple.com/my-edu/store" ><sup> ◊◊◊ </sup>Learn more > </a>
               </p>
           </div>
-            <div className='buddleOption '>
-              <div>
+            <div className='buddleOption p-5 m-10 text-center'>
+              <div className='mx-auto place-content-cente'>
                 <h1>Choose your new MacBook Pro.</h1>
               </div>
                 <div className=''>

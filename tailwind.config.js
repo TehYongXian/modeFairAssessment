@@ -8,6 +8,7 @@ module.exports = {
         '#686869':'#686869',
         'border-color-0066CC':'#0066CC',
         'red':'#FF0000',
+        'appleBackgroundGray':'#FAFAFA',
       }
     },
     
