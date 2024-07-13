@@ -5,7 +5,7 @@ function Inch16Macbook() {
     return (
         <div className="flex flex-wrap place-content-center  max-w-maxW">
             {itemList.Macbook["16-inch"].map((inch16) => (
-            <div className="p-2 m-1 bg-appleBackgroundGray w-1/3 rounded-2xl  max-w-maxW">
+            <div className="p-2 m-1 bg-appleBackgroundGray w-1/4 rounded-2xl  max-w-maxW">
                 <img width="452" height="420" alt="14-inch MacBook Pro, open, display, thin bezel, FaceTime HD camera, raised feet, rounded corners, Silver" src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&amp;hei=840&amp;fmt=jpeg&amp;qlt=90&amp;.v=1697230830269" class="rc-productbundle-image"/>
                 <span>color</span>
                 <ul>

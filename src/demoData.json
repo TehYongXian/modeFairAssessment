@@ -89,7 +89,11 @@
                 "trackpad": "Force Touch trackpad",
                 "PowerAdapter": "96W USB-C Power Adapter",
                 "Price": "RM 14,799.00",
-                "Installment": "RM 616.63/mo.per month for 24 mo.*"
+                "Installment": "RM 616.63/mo.per month for 24 mo.*",
+                "url": "/inch14M3Max",
+                "title": "Customise your 14‑inch MacBook Pro",
+                "ChipSpec":"Apple M3 Max chip with 14‑core CPU, 30‑core GPU and 16‑core Neural Engine",
+                "Backlit":"Backlit Magic Keyboard with Touch ID - US English"
             }
         ],
         "16-inch": [
