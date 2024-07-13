@@ -11,7 +11,7 @@ module.exports = {
         'appleBackgroundGray':'#FAFAFA',
         'btnColor': "#0071E3",
         'borderGray':"#CECECF",
-        'textGray': "#F5F5F7"
+        'textGray': "#F5F5F7",
       },
       fontSize: {
         '10': '10px',
