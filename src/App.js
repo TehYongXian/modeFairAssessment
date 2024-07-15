@@ -8,7 +8,7 @@ import Inch14M3Max from './views/itemDetails/Inch14M3Max';
 function App() {
   return (
     <Router>
-      <div className="app ">
+      <div className="app w-full">
         <div className="app border-solid border-b border-#D3D3D5">
           <NavBar/>
         </div>

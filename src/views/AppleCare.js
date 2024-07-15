@@ -2,7 +2,7 @@ import React from "react";
 
 function AppleCare() {
     return (
-        <div className="max-w-maxW mx-auto">
+        <div className="max-w-maxW mx-auto p-5 m-2">
             <div className="flex justify-center p-16">
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/applecare-hero-bb-201706?wid=304&amp;hei=304&amp;fmt=jpeg&amp;qlt=90&amp;.v=1629955311000" alt="" width="152" height="152" class="dd-hero ir"/>
             </div>

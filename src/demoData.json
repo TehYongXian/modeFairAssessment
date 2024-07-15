@@ -157,6 +157,26 @@
                 "Price": "RM 17,999.00",
                 "Installment": "RM 749.96/mo.per month for 24 mo.*"
             }
-        ]
+        ],
+        "14inchM3Max": {
+            "minPrice": 14799,
+            "Chip": {
+                "M3Max14CPU30GPU":0,
+                "M3Max16CPU40GPU": 1200
+            },
+            "Memory": {
+                "36GB":0,
+                "48GB":800,
+                "64GB":1600,
+                "96GB":3200,
+                "128GB":4800
+            },
+            "Storage": {
+                "1TB": 0,
+                "2TB": 1600,
+                "4TB": 4000,
+                "8TB": 8800
+            }
+        }
     }
 }

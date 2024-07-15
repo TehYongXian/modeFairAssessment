@@ -1,7 +1,8 @@
 import React from "react";
 import Choice14inchInfo from "./Choice14inchInfo";
+import Choice16inchInfo from "./Choice16inchInfo";
 
-function WhatInTheBox() {
+function WhatInTheBox16inch() {
     return (
         <div className="mx-auto px-auto text-center flex flex-col items-center justify-center pt-5 mt-7">
             <h1 className="text-4xl"><strong>What's in the Box</strong></h1>
@@ -23,7 +24,7 @@ function WhatInTheBox() {
                 </div>
             </div>
             <div >
-                <Choice14inchInfo/>
+                <Choice16inchInfo/>
             </div>
             
         </div>
@@ -31,4 +32,4 @@ function WhatInTheBox() {
     )
 }
 
-export default WhatInTheBox
+export default WhatInTheBox16inch

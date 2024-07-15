@@ -1,0 +1,125 @@
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import demoData from './demoData.json'; // Import the JSON file
+
+const App = () => {
+  const [configuration, setConfiguration] = useState(null);
+  const [selectedOptions, setSelectedOptions] = useState({
+    Chip: 'M3Max14CPU30GPU',
+    Memory: '36GB',
+    Storage: '1TB',
+  });
+
+  useEffect(() => {
+    setConfiguration(demoData['Macbook']['14inchM3Max']);
+  }, []);
+
+  const handleOptionChange = (optionCategory, optionValue) => {
+    setSelectedOptions(prevOptions => ({
+      ...prevOptions,
+      [optionCategory]: optionValue,
+    }));
+  };
+
+  const calculateTotalPrice = () => {
+    if (!configuration) return 0;
+    return (
+      configuration.minPrice +
+      configuration.Chip[selectedOptions.Chip] +
+      configuration.Memory[selectedOptions.Memory] +
+      configuration.Storage[selectedOptions.Storage]
+    );
+  };
+
+  if (!configuration) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div className="App">
+      <h1>Customize your 14-inch MacBook Pro</h1>
+
+      {/* Chip (Processor) Selection */}
+      <div className="p-2 m-2">
+        <p><strong>Chip (Processor)</strong></p>
+        <p className="pt-2 text-blue-600"><a>Which chip is right for you?</a></p>
+        <div className="p-2 m-2">
+          {Object.keys(configuration.Chip).map(chip => (
+            <button
+              key={chip}
+              className={`border border-solid border-black p-4 rounded-2xl w-full ${selectedOptions.Chip === chip ? 'bg-gray-200' : ''}`}
+              onClick={() => handleOptionChange('Chip', chip)}
+            >
+              <div className="flex justify-center">
+                <span className="form-selector-title w-2/3 text-left">{chip}</span>
+                <span className="rf-optiontile-pricedelta w-1/3 text-center place-content-center text-right p-2">
+                  {selectedOptions.Chip === chip ? '-' : '+'} RM {configuration.Chip[chip]}
+                </span>
+              </div>
+            </button>
+          ))}
+          <div className="p-2 m-2">
+            <p className="pt-2 text-gray-500">Select M3 Max with 30-core GPU to add 96GB of memory.</p>
+            <p className="pt-2 text-gray-500">Select M3 Max with 40-core GPU to add 48GB, 64GB, or 128GB.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Memory Selection */}
+      <div className="p-2 m-2">
+        <p><strong>Memory</strong></p>
+        <p className="pt-2 text-blue-600"><a>How much memory is right for you?</a></p>
+        <div>
+          {Object.keys(configuration.Memory).map(memory => (
+            <button
+              key={memory}
+              className={`border border-solid border-black p-4 rounded-2xl w-full ${selectedOptions.Memory === memory ? 'bg-gray-200' : ''}`}
+              onClick={() => handleOptionChange('Memory', memory)}
+            >
+              <div className="flex justify-center">
+                <span className="form-selector-title w-2/3 text-left">{memory}</span>
+                <span className="rf-optiontile-pricedelta w-1/3 text-center place-content-center text-right p-2">
+                  {selectedOptions.Memory === memory ? '-' : '+'} RM {configuration.Memory[memory]}
+                </span>
+              </div>
+            </button>
+          ))}
+          <p className="pt-2 text-gray-500">96GB available with M3 Max with 30-core GPU. 48GB, 64GB, or 128GB available with M3 Max with 40-core GPU.</p>
+        </div>
+      </div>
+
+      {/* Storage Selection */}
+      <div className="p-2 m-2">
+        <p><strong>Storage</strong></p>
+        <p className="pt-2 text-blue-600"><a>How much storage is right for you?</a></p>
+        <div>
+          {Object.keys(configuration.Storage).map(storage => (
+            <button
+              key={storage}
+              className={`border border-solid border-black p-4 rounded-2xl w-full ${selectedOptions.Storage === storage ? 'bg-gray-200' : ''}`}
+              onClick={() => handleOptionChange('Storage', storage)}
+            >
+              <div className="flex justify-center">
+                <span className="form-selector-title w-2/3 text-left">{storage}</span>
+                <span className="rf-optiontile-pricedelta w-1/3 text-center place-content-center text-right p-2">
+                  {selectedOptions.Storage === storage ? '-' : '+'} RM {configuration.Storage[storage]}
+                </span>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Summary and Total Price */}
+      <div className="summary">
+        <h2>Summary</h2>
+        <p>Chip: {selectedOptions.Chip}</p>
+        <p>Memory: {selectedOptions.Memory}</p>
+        <p>Storage: {selectedOptions.Storage}</p>
+        <h3>Total Price: RM {calculateTotalPrice()}</h3>
+      </div>
+    </div>
+  );
+};
+
+export default App;
