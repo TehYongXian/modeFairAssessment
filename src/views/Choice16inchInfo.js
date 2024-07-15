@@ -3,14 +3,14 @@ import React from "react";
 
 function Inch16Macbook() {
     return (
-        <div className="m-2 t-100 p-2 bg-appleBackgroundGray rounded-2xl">
-            <div className="title">
-                <h1>What to consider when choosing your MacBook Pro.</h1>
+        <div className="m-5 p-5 bg-appleBackgroundGray rounded-2xl">
+            <div className="title text-center">
+                <h1 className="text-2xl font-bold">What to consider when choosing your MacBook Pro.</h1>
                 <p>Configure your laptop on the next step.</p>
             </div>
-            <div className="flex flex-row m-auto p-5">
+            <div className="flex flex-col md:flex-row md:flex-wrap justify-start">
                 
-                <div className="p-2 m-5 text-left">
+                <div className="p-2 m-5 text-left md:w-1/2 lg:w-1/4">
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-m3-pro-icon-mac-202310?wid=72&amp;hei=72&amp;fmt=png-alpha&amp;.v=1696970981318" alt="" width="36" height="36" class="ir"></img>
                     <h3 className="pt-3">Apple M3 Pro chip</h3>
                     <p className="pt-3">Building on the M3 chip, M3 Pro provides even greater performance and additional unified memory for more demanding apps and workflows</p>
@@ -21,7 +21,7 @@ function Inch16Macbook() {
                         <li>Supports up to two external displays</li>
                     </ul>
                 </div>
-                <div className="p-2 m-5 text-left">
+                <div className="p-2 m-5 text-left md:w-1/2 lg:w-1/4">
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-m3-max-icon-mac-202310?wid=72&amp;hei=72&amp;fmt=png-alpha&amp;.v=1696970981319" alt="" width="36" height="36" class="ir"></img>
                     <h3 className="pt-3">Apple M3 Max chip</h3>
                     <p className="pt-3">M3 Max powers the most extreme workflows with even more CPU and GPU cores, enormous unified memory and an advanced Media Engine</p>
@@ -32,7 +32,7 @@ function Inch16Macbook() {
                         <li>Supports up to four external displays</li>
                     </ul>
                 </div>
-                <div className="p-2 m-5 text-left">
+                <div className="p-2 m-5 text-left md:w-1/2 lg:w-1/4">
                 <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/memory-icon-mac-202310?wid=90&amp;hei=72&amp;fmt=png-alpha&amp;.v=1696970981318" alt="" width="45" height="36" class="ir"></img>
                     <h3 className="pt-3">Unified Memory</h3>
                     <p className="pt-3">Faster and more efficient than traditional RAM, unified memory is integrated within the M3 family of chips so apps can quickly share data between the CPU, GPU and Neural Engine</p>

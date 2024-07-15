@@ -1,23 +1,44 @@
 import React from "react";
 import itemList from '../demoData.json'
+import WhatInTheBox16inch from "./WhatInTheBox16inch";
 
 function Inch16Macbook() {
     return (
-        <div className="flex flex-wrap place-content-center  max-w-maxW">
+        <div className="max-w-maxW">
+        <div className="flex flex-wrap place-content-center ">
             {itemList.Macbook["16-inch"].map((inch16) => (
-            <div className="p-2 m-1 bg-appleBackgroundGray w-1/4 rounded-2xl  max-w-maxW">
+            <div className="p-2 m-3 bg-appleBackgroundGray rounded-2xl w-full md:w-1/4 justify-start">
                 <img width="452" height="420" alt="14-inch MacBook Pro, open, display, thin bezel, FaceTime HD camera, raised feet, rounded corners, Silver" src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&amp;hei=840&amp;fmt=jpeg&amp;qlt=90&amp;.v=1697230830269" class="rc-productbundle-image"/>
                 <span>color</span>
-                <ul>
-                    <li><input type="radio" id="" class="colornav-value rc-dimension-colornav-input" value="space_gray" checked=""/>
-                    <label for=":rd:" class="colornav-link rc-dimension-colornav-link" data-autom="dimensionColor-space_gray-MBP_M3_14-14inch-entry"><img width="32" height="32" alt="" src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-spacegray-cto-hero-202310_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1697913361217" class="colornav-swatch"/><span class="colornav-label rc-productbundle-colornavlabel visuallyhidden">Space Grey</span></label>
-                    
-                    </li>
-                    <li><input type="radio" id=":re:" class="colornav-value rc-dimension-colornav-input" name="color-:rc:" value="silver"/>
-                    <label for=":re:" class="colornav-link rc-dimension-colornav-link" data-autom="dimensionColor-silver-MBP_M3_14-14inch-entry">
-                    <img width="32" height="32" alt="" src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-silver-cto-hero-202310_SW_COLOR?wid=64&amp;hei=64&amp;fmt=jpeg&amp;qlt=90&amp;.v=1697913361277" class="colornav-swatch"/><span class="colornav-label rc-productbundle-colornavlabel visuallyhidden">Silver</span></label>
-                    
-                    </li>
+                <ul className="flex">
+                <li className="flex items-center space-x-2">
+                                <label className="flex items-center cursor-pointer m-2">
+                                    <input type="radio" name="color" value="silver" className="hidden peer" checked />
+                                    <div className="w-8 h-8 border-2 border-gray-300 rounded-full peer-checked:border-blue-500 peer-checked:ring-2 peer-checked:ring-blue-500">
+                                        <img
+                                            width="32"
+                                            height="32"
+                                            alt="Silver"
+                                            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-spacegray-cto-hero-202310_SW_COLOR?wid=64&hei=64&fmt=jpeg&qlt=90&.v=1697913361217"
+                                            className="w-full h-full rounded-full"
+                                        />
+                                    </div>
+                                </label>
+                            </li>
+                            <li className="flex items-center space-x-2">
+                                <label className="flex items-center cursor-pointer m-2">
+                                    <input type="radio" name="color" value="silver" className="hidden peer" />
+                                    <div className="w-8 h-8 border-2 border-gray-300 rounded-full peer-checked:border-blue-500 peer-checked:ring-2 peer-checked:ring-blue-500">
+                                        <img
+                                            width="32"
+                                            height="32"
+                                            alt="Silver"
+                                            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp-14-silver-cto-hero-202310_SW_COLOR?wid=64&hei=64&fmt=jpeg&qlt=90&.v=1697913361277"
+                                            className="w-full h-full rounded-full"
+                                        />
+                                    </div>
+                                </label>
+                            </li>
                 </ul>
                       
                 <div className="spec">
@@ -91,6 +112,8 @@ function Inch16Macbook() {
             </div>
         ))}
         </div>
+        <WhatInTheBox16inch/>
+    </div>
     )
 }
 
